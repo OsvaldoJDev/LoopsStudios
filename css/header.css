@@ -1,0 +1,83 @@
+.header-bg {
+  background-image: url(../img/desktop/image-hero.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* height: 80vh; */
+}
+
+.header-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.header-container nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-container nav ul {
+  display: flex;
+  gap: 30px;
+}
+
+.header-container .hamburger {
+  display: none;
+}
+
+.header__title {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  max-width: 500px;
+  border: 3px solid #FFF;
+  padding: 30px;
+}
+
+
+.header__title span {
+  font-size: 4rem;
+  font-family: 'josefin sans', sans-serif;
+  text-transform: uppercase;
+  color: #FFF;
+  /* word-wrap: break-word; */
+  margin: 0 auto;
+}
+
+@media (max-width:1000px) {
+
+  .header-bg {
+    height: 1;
+  }
+
+  .header-container nav ul {
+    display: none;
+  }
+
+  .header-container .hamburger {
+    display: block;
+  }
+
+  .header__title {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 150px auto 150px auto;
+  }
+
+  .header__title span {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width:465px) {
+  .header__title span {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width:380px) {
+  .header__title span {
+    font-size: 1.5rem;
+  }
+}
