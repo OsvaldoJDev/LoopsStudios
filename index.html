@@ -1,142 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loops Studios</title>
+    <meta name="description" content="Loops Studios" />
+    <link rel="stylesheet" href="./css/general.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Loops Studios</title>
-  <meta name="description" content="Loops Studios">
-  <link rel="stylesheet" href="./css/general.css">
-</head>
-
-<body>
-  <header class="header-bg">
-    <div class="header-container">
-      <nav>
-        <a href="#"><img src="./img/logo.svg" alt="Loops Studios"></a>
-        <ul>
-          <li><a class="link" href="#">About</a></li>
-          <li><a class="link" href="#">Carrers</a></li>
-          <li><a class="link" href="#">Events</a></li>
-          <li><a class="link" href="#">Products</a></li>
-          <li><a class="link" href="#">Support</a></li>
-        </ul>
-        <div class="hamburger">
-          <img src="./img/icon-hamburger.svg" alt="">
+  <body>
+    <header class="header-bg">
+      <div class="header-container">
+        <nav>
+          <a href="#"><img src="./img/logo.svg" alt="Loops Studios" /></a>
+          <ul class="drop-down">
+            <li><a class="link" href="#">About</a></li>
+            <li><a class="link" href="#">Carrers</a></li>
+            <li><a class="link" href="#">Events</a></li>
+            <li><a class="link" href="#">Products</a></li>
+            <li><a class="link" href="#">Support</a></li>
+          </ul>
+          <button onclick="abrirMenu()" class="btn-menu">
+            <img src="./img/icon-hamburger.svg" alt="" />
+          </button>
+        </nav>
+        <div class="header__title">
+          <span class="titulo">immersive experiences that deliver</span>
         </div>
-      </nav>
-      <div class="header__title">
-        <span class="titulo">immersive experiences that deliver</span>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <section class="intro-bg">
-    <div class="intro-container">
-      <div class="intro__img">
-        <img src="./img/desktop/image-interactive.jpg" alt="Man with vr glasses">
+    <section class="intro-bg">
+      <div class="intro-container">
+        <div class="intro__img">
+          <img
+            src="./img/desktop/image-interactive.jpg"
+            alt="Man with vr glasses"
+          />
+        </div>
+        <div class="intro__text">
+          <h1 class="titulo">the leader in interactive vr</h1>
+          <p>
+            Founded in 2011, Loopstudios has been producing world-class virtual
+            reality projects for some of the best companies around the globe.
+            Our award-winning creations have transformed businesses through
+            digital experiences that bind to their brand.
+          </p>
+        </div>
       </div>
-      <div class="intro__text">
-        <h1 class="titulo">the leader in interactive vr</h1>
-        <p>Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. Our award-winning creations have transformed businesses through digital experiences that bind to their brand.</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="gallery-bg">
-    <div class="gallery-container">
-      <div class="gallery__title">
-        <h1 class="titulo">Our creations</h1>
+    <section class="gallery-bg">
+      <div class="gallery-container">
+        <div class="gallery__title">
+          <h1 class="titulo">Our creations</h1>
+          <a class="btn" href="#">SEE ALL</a>
+        </div>
+
+        <div class="gallery__grid">
+          <div class="gallery__item">
+            <img src="./img/desktop/image-deep-earth.jpg" alt="" />
+            <div class="gallery__text">
+              <span>DEEP EARTH</span>
+            </div>
+          </div>
+
+          <div class="gallery__item">
+            <img src="./img/desktop/image-night-arcade.jpg" alt="" />
+            <div class="gallery__text">
+              <span>NIGHT ARCADE</span>
+            </div>
+          </div>
+
+          <div class="gallery__item">
+            <img src="./img/desktop/image-soccer-team.jpg" alt="" />
+            <div class="gallery__text">
+              <span>SOCCER TEAM VR</span>
+            </div>
+          </div>
+
+          <div class="gallery__item">
+            <img src="./img/desktop/image-grid.jpg" alt="" />
+            <div class="gallery__text">
+              <span>THE GRID</span>
+            </div>
+          </div>
+
+          <div class="gallery__item">
+            <img src="./img/desktop/image-from-above.jpg" alt="" />
+            <div class="gallery__text">
+              <span>FROM UP ABOVE VR</span>
+            </div>
+          </div>
+
+          <div class="gallery__item">
+            <img src="./img/desktop/image-pocket-borealis.jpg" alt="" />
+            <div class="gallery__text">
+              <span>POCKET BOREALIS</span>
+            </div>
+          </div>
+
+          <div class="gallery__item">
+            <img src="./img/desktop/image-curiosity.jpg" alt="" />
+            <div class="gallery__text">
+              <span>THE CURIOSITY</span>
+            </div>
+          </div>
+
+          <div class="gallery__item">
+            <img src="./img/desktop/image-fisheye.jpg" alt="" />
+            <div class="gallery__text">
+              <span>MAKE IT FISHEYE</span>
+            </div>
+          </div>
+        </div>
         <a class="btn" href="#">SEE ALL</a>
       </div>
+    </section>
 
-      <div class="gallery__grid">
-
-        <div class="gallery__item">
-          <img src="./img/desktop/image-deep-earth.jpg" alt="">
-          <div class="gallery__text">
-            <span>DEEP EARTH</span>
-          </div>
+    <footer class="footer-bg">
+      <div class="footer-container">
+        <div class="footer__left">
+          <img src="./img/logo.svg" alt="Loopstudios" />
+          <ul>
+            <li><a class="link" href="#">About</a></li>
+            <li><a class="link" href="#">Carrers</a></li>
+            <li><a class="link" href="#">Events</a></li>
+            <li><a class="link" href="#">Products</a></li>
+            <li><a class="link" href="#">Support</a></li>
+          </ul>
         </div>
-
-        <div class="gallery__item">
-          <img src="./img/desktop/image-night-arcade.jpg" alt="">
-          <div class="gallery__text">
-            <span>NIGHT ARCADE</span>
+        <div class="footer__right">
+          <div class="footer__redes">
+            <img src="./img/icon-facebook.svg" alt="Facebook" width="30" />
+            <img src="./img/icon-twitter.svg" alt="Twitter" width="30" />
+            <img src="./img/icon-pinterest.svg" alt="Pinterest" width="30" />
+            <img src="./img/icon-instagram.svg" alt="Instagram" width="30" />
           </div>
-        </div>
-
-        <div class="gallery__item">
-          <img src="./img/desktop/image-soccer-team.jpg" alt="">
-          <div class="gallery__text">
-            <span>SOCCER TEAM VR</span>
-          </div>
-        </div>
-
-        <div class="gallery__item">
-          <img src="./img/desktop/image-grid.jpg" alt="">
-          <div class="gallery__text">
-            <span>THE GRID</span>
-          </div>
-        </div>
-
-        <div class="gallery__item">
-          <img src="./img/desktop/image-from-above.jpg" alt="">
-          <div class="gallery__text">
-            <span>FROM UP ABOVE VR</span>
-          </div>
-        </div>
-
-        <div class="gallery__item">
-          <img src="./img/desktop/image-pocket-borealis.jpg" alt="">
-          <div class="gallery__text">
-            <span>POCKET BOREALIS</span>
-          </div>
-        </div>
-
-        <div class="gallery__item">
-          <img src="./img/desktop/image-curiosity.jpg" alt="">
-          <div class="gallery__text">
-            <span>THE CURIOSITY</span>
-          </div>
-        </div>
-
-        <div class="gallery__item">
-          <img src="./img/desktop/image-fisheye.jpg" alt="">
-          <div class="gallery__text">
-            <span>MAKE IT
-              FISHEYE</span>
-          </div>
+          <span>© 2021 Loopstudios. All rights reserved.</span>
         </div>
       </div>
-      <a class="btn" href="#">SEE ALL</a>
-    </div>
-  </section>
-
-  <footer class="footer-bg">
-    <div class="footer-container">
-      <div class="footer__left">
-        <img src="./img/logo.svg" alt="Loopstudios">
-        <ul>
-          <li><a class="link" href="#">About</a></li>
-          <li><a class="link" href="#">Carrers</a></li>
-          <li><a class="link" href="#">Events</a></li>
-          <li><a class="link" href="#">Products</a></li>
-          <li><a class="link" href="#">Support</a></li>
-        </ul>
-      </div>
-      <div class="footer__right">
-        <div class="footer__redes">
-          <img src="./img/icon-facebook.svg" alt="Facebook" width="30">
-          <img src="./img/icon-twitter.svg" alt="Twitter" width="30">
-          <img src="./img/icon-pinterest.svg" alt="Pinterest" width="30">
-          <img src="./img/icon-instagram.svg" alt="Instagram" width="30">
-        </div>
-        <span>© 2021 Loopstudios. All rights reserved.</span>
-      </div>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+    <script src="./JavaScript/script.js"></script>
+  </body>
 </html>
