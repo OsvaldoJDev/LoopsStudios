@@ -14,14 +14,14 @@
       <div class="header-container">
         <nav>
           <a href="#"><img src="./img/logo.svg" alt="Loops Studios" /></a>
-          <ul class="drop-down">
+          <ul id="menu" role="menu" class="drop-down">
             <li><a class="link" href="#">About</a></li>
             <li><a class="link" href="#">Carrers</a></li>
             <li><a class="link" href="#">Events</a></li>
             <li><a class="link" href="#">Products</a></li>
             <li><a class="link" href="#">Support</a></li>
           </ul>
-          <button onclick="abrirMenu()" class="btn-menu">
+          <button class="btn-menu" aria-controls="menu" aria-expanded="false">
             <img src="./img/icon-hamburger.svg" alt="" />
           </button>
         </nav>
